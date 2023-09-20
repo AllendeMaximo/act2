@@ -1,0 +1,40 @@
+/* Estilos generales para botones y párrafos */
+.botonesfila1, .botonesfila2 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .boton {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #ce18ce;
+    color: #fff;
+    font-size: 16px;
+    margin: 5px;
+  }
+  
+  p {
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  /* Media Query para pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    .botonesfila1, .botonesfila2 {
+      flex-direction: column; /* Cambiar a columnas en pantallas pequeñas */
+      align-items: center; /* Centrar elementos en columnas */
+    }
+  
+    .boton {
+      width: 100%; /* Ocupar el ancho completo en pantallas pequeñas */
+    }
+  
+    p {
+      font-size: 18px; /* Reducir el tamaño de fuente en pantallas pequeñas */
+    }
+  }
+  
