@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("../src/img/fondito.webp");
+  background-image: url("../src/img/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -16,3 +16,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.titulo {
+  font-size: 24px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white; 
+  border-radius: 10px; 
+  padding: 10px 20px; 
+  margin: 10px auto; 
+  display: inline-block; 
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+    margin: 10px;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+    margin: 5px;
+  }
+}
+

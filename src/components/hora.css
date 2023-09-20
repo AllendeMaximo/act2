@@ -1,0 +1,27 @@
+/* Estilos generales para .fotitos */
+.fotitos {
+    border-radius: 360%;
+  }
+  
+  /* Estilos generales para .Hora */
+  .Hora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Media Query para pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    /* Estilos para .fotitos en pantallas pequeñas */
+    .fotitos {
+      border-radius: 50%; /* Reducir el valor del border-radius */
+    }
+  
+    /* Estilos para .Hora en pantallas pequeñas */
+    .Hora {
+      text-align: center; /* Centrar el texto horizontalmente */
+      padding: 10px; /* Espaciado interno para el contenido */
+    }
+  }
+  

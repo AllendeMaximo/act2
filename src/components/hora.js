@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../hora.css';
+import './hora.css';
 
 import mañana from '../img/mañana.jpg';
 import tarde from '../img/tarde.jpg';
@@ -13,21 +13,21 @@ function Horadia() {
     const horaActual = new Date().getHours();
 
     if (horaActual >= 5 && horaActual < 12) {
-      setHoraDelDia('mañana');
+      setHoraDelDia('MAÑANA');
       setImagen(mañana);
     } else if (horaActual >= 12 && horaActual < 18) {
-      setHoraDelDia('tarde');
+      setHoraDelDia('TARDE');
       setImagen(tarde);
     } else {
-      setHoraDelDia('noche');
+      setHoraDelDia('NOCHE');
       setImagen(noche);
     }
   }, []);
 
   return (
     <div className="Hora">
-      <h1>Imagen del día</h1>
-      <p>Hora del día: {horaDelDia}</p>
+      <h1>Horario del dia</h1>
+      <p>{horaDelDia}</p>
       {imagen && <img className= "fotitos" src={imagen} alt={`Imagen de la ${horaDelDia}`} />}
     </div>
   );

@@ -5,8 +5,11 @@ import Horadia from './components/hora';
 function App() {
   return (
     <>
-    <Botones/>
+    <div className="container">
+      <h1 className="titulo">ENCUENTRA TU DIA Y HORA EXACTA</h1>
+      <Botones/>
     <Horadia/>
+    </div>
     </>
   );
 }
